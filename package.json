@@ -1,0 +1,40 @@
+{
+  "name": "bookworm_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "boot.js",
+  "scripts": {
+    "init-app": "gulp api.dev && npm run init-api && npm run init-web",
+    "init-api": "node bin/boot.js",
+    "init-web": "cd www && npm start",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject"
+  },
+  "author": "theutku",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-typescript": "^4.0.2",
+    "morgan": "^1.9.0",
+    "mysql": "^2.15.0",
+    "nconf": "^0.10.0",
+    "nodemon": "^1.17.3",
+    "request-promise-native": "^1.0.3",
+    "serve-static": "^1.13.2",
+    "typescript": "^2.8.1"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.16.8",
+    "@types/cors": "^2.8.3",
+    "@types/express": "^4.11.1",
+    "@types/morgan": "^1.7.35",
+    "@types/mysql": "^2.15.4",
+    "@types/nconf": "0.0.37",
+    "@types/serve-static": "^1.13.1"
+  }
+}
